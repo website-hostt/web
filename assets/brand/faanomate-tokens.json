@@ -1,0 +1,24 @@
+{
+  "name": "FAANOMATE Luminous System",
+  "core": {
+    "midnight": "#060B1F",
+    "midnight2": "#0A1730",
+    "auroraCyan": "#00F5E9",
+    "luminousTeal": "#14D9B8",
+    "softMint": "#9CFFB8",
+    "signalLime": "#D7FF6A",
+    "softWhite": "#F4F7FF",
+    "mutedBlue": "#AFC5D6",
+    "lineBlue": "#1D5571"
+  },
+  "optionalSpectrum": {
+    "spectrumBlue": "#00E5FF",
+    "spectrumViolet": "#8A3DFF",
+    "spectrumPink": "#FF2E9B"
+  },
+  "gradients": {
+    "luminous": "linear-gradient(115deg, #00F5E9 0%, #14D9B8 40%, #9CFFB8 72%, #D7FF6A 100%)",
+    "spectrum": "linear-gradient(115deg, #00E5FF 0%, #8A3DFF 52%, #FF2E9B 100%)",
+    "surface": "linear-gradient(145deg, rgba(13,38,62,.92), rgba(6,11,31,.98))"
+  }
+}

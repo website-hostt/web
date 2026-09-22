@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">FAANOMATE calendar icon</title>
+  <desc id="desc">Reusable calendar line icon.</desc>
+  <defs>
+<linearGradient id="luminous" x1="0%" y1="10%" x2="100%" y2="90%">
+  <stop offset="0%" stop-color="#00F5E9"/><stop offset=".38" stop-color="#14D9B8"/>
+  <stop offset=".72" stop-color="#9CFFB8"/><stop offset="1" stop-color="#D7FF6A"/>
+</linearGradient>
+<linearGradient id="luminousReverse" x1="0%" y1="90%" x2="100%" y2="10%">
+  <stop offset="0%" stop-color="#D7FF6A"/><stop offset=".34" stop-color="#9CFFB8"/>
+  <stop offset=".7" stop-color="#14D9B8"/><stop offset="1" stop-color="#00F5E9"/>
+</linearGradient>
+<linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset=".52" stop-color="#8A3DFF"/><stop offset="1" stop-color="#FF2E9B"/>
+</linearGradient>
+<filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+  <feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="smallGlow" x="-70%" y="-70%" width="240%" height="240%">
+  <feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+  <g fill="none" stroke="url(#luminous)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="44" height="42" rx="5"/><path d="M10 24h44M21 7v10m22-10v10M20 33h1m10 0h1m10 0h1M20 43h1m10 0h1m10 0h1"/></g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">FAANOMATE reference-matched wordmark</title>
+  <desc id="desc">Reference-traced FAANOMATE wordmark as clean vector paths; no font dependency and no glow.</desc>
+  <g transform="translate(18 15)" fill="#060B1F" fill-rule="evenodd" shape-rendering="geometricPrecision" aria-label="FAANOMATE"><path d="M0 0H39V8H10V19H33V26H10V48H0Z" transform="translate(0 0)"/><path d="M0 48 24 0H33L57 48H45L29 13 12 48Z" transform="translate(69 0)"/><path d="M0 48 24 0H33L57 48H45L29 13 12 48Z" transform="translate(160 0)"/><path d="M0 0H10L39 36V0H49V48H39L10 12V48H0Z" transform="translate(254 0)"/><path d="M28 0C12 0 0 10 0 24.5S12 49 28 49 56 39 56 24.5 44 0 28 0ZM28 10C39 10 46 15.5 46 24.5S39 39 28 39 10 33.5 10 24.5 17 10 28 10Z" transform="translate(338 0)"/><path d="M0 47V0H10L29 29 49 0H59V47H49V15L34 36C31 40 27 40 24 36L10 15V47Z" transform="translate(429 1)"/><path d="M0 48 24 0H33L57 48H45L29 13 12 48Z" transform="translate(526 1)"/><path d="M0 0H44V8H26V47H17V8H0Z" transform="translate(609 1)"/><path d="M0 0H38V8H9V19H32V27H9V39H38V47H0Z" transform="translate(687 1)"/></g>
+  <text x="380" y="137" text-anchor="middle" fill="#14D9B8" font-family="Arial, sans-serif" font-size="16" letter-spacing="7">CREATE. BUILD. AUTOMATE.</text>
+</svg>

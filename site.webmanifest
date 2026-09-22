@@ -1,0 +1,9 @@
+{
+  "name": "FAANOMATE | Create. Build. Automate.",
+  "short_name": "FAANOMATE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#060B1F",
+  "theme_color": "#060B1F",
+  "icons": [{"src":"assets/brand/faanomate-favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

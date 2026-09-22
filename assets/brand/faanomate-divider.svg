@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 16" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">FAANOMATE divider</title>
+  <desc id="desc">Clean no-glow divider using the finalized FAANOMATE palette.</desc>
+  <line x1="0" y1="8" x2="360" y2="8" stroke="#1D5571" stroke-width="1"/>
+  <line x1="0" y1="8" x2="120" y2="8" stroke="#14D9B8" stroke-width="3"/>
+  <circle cx="124" cy="8" r="4" fill="#9CFFB8"/>
+</svg>

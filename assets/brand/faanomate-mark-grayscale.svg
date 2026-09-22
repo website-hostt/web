@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 270"
+     shape-rendering="geometricPrecision" role="img" aria-labelledby="title desc">
+  <title id="title">FAANOMATE grayscale FM monogram</title>
+  <desc id="desc">Clean path-based FAANOMATE FM ribbon logo using the grayscale palette, without glow or background.</desc>
+
+
+  <!-- Rear arch: the high left sweep of the supplied FM mark. -->
+  <path fill="#8793A0" d="
+    M 28 207
+    C 54 172 78 122 108 77
+    C 139 31 174 8 205 13
+    C 242 18 253 50 270 94
+    C 287 138 301 177 329 199
+    C 313 201 296 188 282 165
+    C 264 134 249 98 232 70
+    C 212 38 191 31 166 43
+    C 127 62 103 107 76 153
+    C 55 187 40 204 28 207 Z"/>
+
+  <!-- Lower-left leaf / front ribbon. -->
+  <path fill="#8793A0" d="
+    M 99 246
+    C 98 222 97 195 106 178
+    C 118 153 143 141 177 138
+    C 193 137 208 128 220 114
+    C 207 140 189 152 164 159
+    C 143 166 137 181 132 203
+    C 127 225 115 241 99 246 Z"/>
+
+  <!-- Central tapered drop. -->
+  <path fill="#8793A0" d="
+    M 249 108
+    C 260 122 271 148 274 169
+    C 276 198 262 228 249 245
+    L 249 108 Z"/>
+
+  <!-- Main front wave: central crossing, valley, right rise, and right end. -->
+  <path fill="#8793A0" d="
+    M 64 119
+    C 93 88 126 68 157 61
+    C 192 53 218 69 240 106
+    C 262 143 280 183 304 195
+    C 328 207 349 196 369 166
+    C 391 133 411 105 432 97
+    C 451 90 466 99 468 118
+    L 469 242
+    C 451 227 435 210 428 191
+    C 418 166 418 136 430 119
+    C 438 107 451 107 455 119
+    L 456 207
+    C 443 197 432 183 429 164
+    C 426 143 432 123 444 112
+    C 431 101 416 116 403 136
+    C 383 165 367 198 340 209
+    C 310 222 286 206 267 181
+    C 240 146 226 106 203 83
+    C 181 60 155 67 132 84
+    C 104 104 83 126 64 119 Z"/>
+
+  <!-- Quiet inner planes preserve the layered-ribbon character without effects. -->
+  <path fill="#8793A0" d="
+    M 28 207
+    C 56 168 81 116 111 73
+    C 139 33 174 10 205 13
+    C 172 24 142 50 116 89
+    C 85 135 63 185 28 207 Z"/>
+  <path fill="#8793A0" d="
+    M 267 181
+    C 241 146 226 106 203 83
+    C 181 60 155 67 132 84
+    C 160 72 184 82 204 108
+    C 229 140 244 180 267 205
+    C 277 216 289 225 304 228
+    C 287 211 276 195 267 181 Z"/>
+  <path fill="#8793A0" d="
+    M 340 209
+    C 369 196 383 165 403 136
+    C 416 116 431 101 444 112
+    C 427 117 411 145 397 169
+    C 380 198 363 220 340 228 Z"/>
+</svg>

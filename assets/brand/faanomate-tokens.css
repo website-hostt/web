@@ -1,0 +1,15 @@
+:root {
+  --fm-midnight: #060B1F; --fm-midnight-2: #0A1730;
+  --fm-aurora: #00F5E9; --fm-teal: #14D9B8; --fm-mint: #9CFFB8; --fm-lime: #D7FF6A;
+  --fm-white: #F4F7FF; --fm-muted: #AFC5D6; --fm-line: #1D5571;
+  --fm-spectrum-blue: #00E5FF; --fm-spectrum-violet: #8A3DFF; --fm-spectrum-pink: #FF2E9B;
+  --fm-gradient-luminous: linear-gradient(115deg, #00F5E9 0%, #14D9B8 40%, #9CFFB8 72%, #D7FF6A 100%);
+  --fm-gradient-spectrum: linear-gradient(115deg, #00E5FF 0%, #8A3DFF 52%, #FF2E9B 100%);
+  --fm-gradient-surface: linear-gradient(145deg, rgba(13,38,62,.92), rgba(6,11,31,.98));
+  --fm-shadow-glow: 0 0 36px rgba(0,245,233,.18); --fm-radius-card: 18px;
+  --fm-font-display: "Montserrat", "Avenir Next", Arial, sans-serif;
+  --fm-font-body: "Inter", "Segoe UI", Arial, sans-serif;
+}
+.fm-gradient-text { background: var(--fm-gradient-luminous); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.fm-surface { background: var(--fm-gradient-surface); border: 1px solid rgba(0,229,255,.24); box-shadow: var(--fm-shadow-glow); }
+.fm-grid { background-image: linear-gradient(rgba(0,245,233,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(0,245,233,.08) 1px, transparent 1px); background-size: 32px 32px; }
