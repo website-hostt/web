@@ -1,0 +1,23 @@
+// Original approved logo reveal, followed by a three second readable hold.
+(()=>{'use strict';const src="<?xml version='1.0' encoding='utf-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1800\" height=\"1218\" viewBox=\"0 0 300 203\" role=\"img\" aria-labelledby=\"title desc\" version=\"1.1\"><title id=\"title\">FAANOMATE stacked logo Color</title><desc id=\"desc\">Approved FM mark with the split arrow and outlined FAANOMATE wordmark.</desc><g shape-rendering=\"geometricPrecision\">\n<path fill=\"#0D2A55\" d=\"M11 6 H100 V39 H44 V57 H83 V86 H44 V128 Q44 134 38 134 H11 Q5 134 5 128 V12 Q5 6 11 6 Z\" />\n<path fill=\"#096BF6\" d=\"M100 6 L152 56 L197 6 L242 70 L197 134 L197 60 L154 101 L134 84 L134 134 H100 Z\" />\n<path fill=\"#096BF6\" d=\"M205 6 H242 L295 68.5 H250 Z\" />\n<path fill=\"#096BF6\" d=\"M250 71.5 H295 L242 134 H205 Z\" />\n</g>\n<g fill=\"#0D2A55\" transform=\"translate(8.86142 193) scale(0.03481894 -0.03481894)\" shape-rendering=\"geometricPrecision\"><path transform=\"translate(0 0)\" d=\"M224 314H543V439H224V604H586V729H74V0H224Z\" /><path transform=\"translate(822 0)\" d=\"M501 147 549 0H703L451 729H285L26 0H179L228 147ZM460 272H270L365 557Z\" /><path transform=\"translate(1755 0)\" d=\"M501 147 549 0H703L451 729H285L26 0H179L228 147ZM460 272H270L365 557Z\" /><path transform=\"translate(2688 0)\" d=\"M511 0H661V729H511V233L222 729H68V0H218V504Z\" /><path transform=\"translate(3621 0)\" d=\"M390 741C288 741 204 707 142 640C77 570 40 468 40 359C40 250 77 147 142 78C205 10 287 -23 391 -23C495 -23 577 10 640 78C703 145 742 251 742 354C742 468 705 571 640 640C576 709 496 741 390 741ZM391 613C514 613 592 513 592 355C592 205 511 105 391 105C269 105 190 205 190 359C190 513 269 613 391 613Z\" /><path transform=\"translate(4610 0)\" d=\"M216 568 347 0H497L626 568V0H776V729H550L422 149L290 729H66V0H216Z\" /><path transform=\"translate(5654 0)\" d=\"M501 147 549 0H703L451 729H285L26 0H179L228 147ZM460 272H270L365 557Z\" /><path transform=\"translate(6587 0)\" d=\"M385 604H598V729H14V604H235V0H385Z\" /><path transform=\"translate(7409 0)\" d=\"M229 314H578V439H229V604H606V729H79V0H624V125H229Z\" /></g>\n</svg>";const groups=[...src.matchAll(/<g\b[^>]*>([\s\S]*?)<\/g>/g)];
+const mark=[...groups[0][1].matchAll(/<path\b[^>]*\/>/g)].map(m=>m[0]);
+const letters=[...groups[1][1].matchAll(/<path\b[^>]*\/>/g)].map(m=>m[0]);
+const wt='translate(8.86142 193) scale(0.03481894 -0.03481894)';
+const clamp=x=>Math.max(0,Math.min(1,x));
+const ease=x=>1-Math.pow(1-clamp(x),4);
+const p=(t,s,d)=>ease((t-s)/d);
+function artwork(t){
+ const f=p(t,.25,1.05),m=p(t,.58,1.08),a=p(t,1.03,.9),b=p(t,1.12,.9);
+ const fade=1-p(t,6.35,.65);
+ const z=1+.018*(1-p(t,.25,2.5));
+ const parts=`<defs><clipPath id="f"><rect x="0" y="0" width="${101*f}" height="145"/></clipPath><clipPath id="m"><rect x="96" y="${140*(1-m)}" width="150" height="140"/></clipPath></defs>
+ <g opacity="${f}" clip-path="url(#f)">${mark[0]}</g>
+ <g opacity="${m}" clip-path="url(#m)">${mark[1]}</g>
+ <g opacity="${a}" transform="translate(${-46*(1-a)} ${-12*(1-a)})">${mark[2]}</g>
+ <g opacity="${b}" transform="translate(${-46*(1-b)} ${12*(1-b)})">${mark[3]}</g>
+ ${letters.map((s,i)=>{const v=p(t,1.6+i*.065,.75);return `<g opacity="${v}" transform="translate(0 ${9*(1-v)})"><g fill="#0D2A55" transform="${wt}">${s}</g></g>`}).join('')}`;
+ return `<g opacity="${fade}" transform="translate(960 540) scale(${z}) translate(-300 -203)"><svg width="600" height="406" viewBox="0 0 300 203" overflow="visible">${parts}</svg></g>`;
+}
+
+const el=document.querySelector('#hero-logo-animation');if(!el)return;let elapsed=0,last=performance.now(),lastFrame=0,visible=true;const reduced=matchMedia('(prefers-reduced-motion: reduce)');new IntersectionObserver(es=>visible=es[0].isIntersecting).observe(el);function draw(now){requestAnimationFrame(draw);const delta=Math.min((now-last)/1000,.1);last=now;if(visible&&!document.hidden&&!window.SITE_MOTION_PAUSED&&!reduced.matches)elapsed+=delta;if(!visible||document.hidden||now-lastFrame<32)return;lastFrame=now;const off=window.SITE_MOTION_PAUSED||reduced.matches;const cycle=elapsed%6.35;const t=off?4:Math.min(cycle,3);const opacity=off||cycle<=6?1:Math.max(0,1-(cycle-6)/.35);el.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="660 337 600 406" width="600" height="406" aria-hidden="true"><g opacity="'+opacity+'">'+artwork(t).replaceAll('#0D2A55','#FFFFFF')+'</g></svg>';}
+requestAnimationFrame(draw);})();

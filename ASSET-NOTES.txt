@@ -1,0 +1,47 @@
+SOURCE AND ASSET NOTES
+
+Portfolio source, supplied by the owner:
+https://faazimalik1.github.io/faizan-motion-portfolio/
+Original campaign designs, project names, Vimeo video IDs, contribution
+descriptions, Grel case study visuals and original showreel.
+
+Company source, supplied by the owner:
+https://website-hostt.github.io/web/services.html
+https://website-hostt.github.io/web/work.html
+Service context, company contact details and Hotel Booking Analysis artwork.
+The hotel dashboard link resolves to the company homepage. No actual
+interactive dashboard or validated project findings were supplied.
+
+Client website, identified by the owner as their work:
+https://itfume.com/
+The website preview is a screenshot captured from the live client site.
+No performance, revenue or conversion claims have been added.
+
+Navigation inspiration:
+https://businessupscalers.com/
+Three main service groups with relevant subcategories. Copy is rewritten
+for FAANOMATE. No partner badges or performance claims are copied.
+
+Tool icons:
+Simple Icons, version 11.15.0, fetched from the published npm package.
+https://simpleicons.org/
+https://github.com/simple-icons/simple-icons
+Icons are identifiers for software, not endorsements or partner badges.
+
+Approved FAANOMATE split mark supplied by the owner. For the dark surface,
+navy portions are reversed to white while electric blue remains unchanged.
+The split, geometry and spacing are preserved.
+
+Hero artwork was generated with built-in image_gen in the earlier version.
+Exact prompt:
+Use case: stylized-concept
+Asset type: premium website portfolio artwork
+Primary request: premium abstract blue optical glass sculptural ribbon,
+angular folded loop resembling a forward chevron but NOT a logo or text.
+Scene/backdrop: dramatic midnight navy background #071120, seamless studio.
+Subject: a single centered sculptural ribbon loop with electric blue
+#096BF6 translucent optical glass and chrome highlights.
+Style/medium: high-end photorealistic 3D sculpture, sophisticated art direction.
+Composition: landscape widescreen 3:2, centered object with breathing room.
+Lighting: dramatic studio lighting, realistic refracted caustics.
+Constraints: no text, no logo, no watermark.
